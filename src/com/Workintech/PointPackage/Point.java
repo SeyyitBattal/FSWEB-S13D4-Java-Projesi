@@ -28,7 +28,10 @@ public class Point {
     }
 
     public double distance(Point p) {
-        return Math.sqrt(Math.pow((getX() - p.x), 2) + Math.pow((getY() - p.y), 2));
+        if(p != null){
+            return Math.sqrt(Math.pow((getX() - p.x), 2) + Math.pow((getY() - p.y), 2));
+        }
+        return distance();
     }
 
     @Override

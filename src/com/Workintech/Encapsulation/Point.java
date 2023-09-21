@@ -9,19 +9,6 @@ public class Point {
         this.y = y;
     }
 
-    public void distance() {
-
-    }
-
-    public void distance(Point p) {
-
-    }
-
-    public void distance(int a, int b) {
-
-    }
-
-
     public int getX() {
         return x;
     }
@@ -37,6 +24,19 @@ public class Point {
     public void setY(int y) {
         this.y = y;
     }
+
+    public double distance() {
+        return Math.sqrt((x * x) + (y * y));
+    }
+
+    public double distance(int a, int b) {
+        return Math.sqrt(Math.pow((this.x - a), 2) + Math.pow((this.y - b), 2));
+    }
+
+    public double distance(Point p) {
+return Math.sqrt(Math.pow((this.x -p.x),2) + Math.pow((this.y -p.y),2));
+    }
+
 
     @Override
     public String toString() {

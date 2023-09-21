@@ -1,4 +1,6 @@
-package com.Workintech.Encapsulation;
+package com.Workintech.PlayerPackage;
+
+import com.Workintech.PointPackage.Weapon;
 
 public class Player {
     private String name;
@@ -13,18 +15,16 @@ public class Player {
         this.weapon = weapon;
     }
 
-    private void healtPerControl(int healthPercentage) {
-
+    public int healthRemaining() {
+        return this.healthPercentage;
     }
-
-    public int healthRemaining() {return this.healthPercentage;}
 
     public int loseHealth(int damage) {
         int result = healthPercentage - damage;
         if (result <= 0) {
             System.out.println(name + " player has been knocked out of game");
-            this.healthPercentage= 0;
-        }else {
+            this.healthPercentage = 0;
+        } else {
             this.healthPercentage = result;
         }
         return healthPercentage;

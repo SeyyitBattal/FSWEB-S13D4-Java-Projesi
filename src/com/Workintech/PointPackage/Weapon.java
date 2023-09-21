@@ -1,4 +1,4 @@
-package com.Workintech.Encapsulation;
+package com.Workintech.PointPackage;
 
 public enum Weapon {
     weapon,

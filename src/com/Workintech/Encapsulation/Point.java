@@ -9,15 +9,15 @@ public class Point {
         this.y = y;
     }
 
-    public double distance() {
-        return Math.sqrt(0);
-    }
-
-    public double distance(Point p) {
+    public void distance() {
 
     }
 
-    public double distance(int a, int b) {
+    public void distance(Point p) {
+
+    }
+
+    public void distance(int a, int b) {
 
     }
 
@@ -38,5 +38,8 @@ public class Point {
         this.y = y;
     }
 
-
+    @Override
+    public String toString() {
+        return "İşlem sonucu: ";
+    }
 }
